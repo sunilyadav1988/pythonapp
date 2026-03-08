@@ -11,7 +11,7 @@ pipeline {
 
   stage('Docker Build') {
    steps {
-    sh 'docker build -t mydockerhubuser/myapp:latest .'
+    sh 'docker build -t sunil093/myapp:latest .'
    }
   }
 
@@ -25,7 +25,7 @@ pipeline {
 
   stage('Push Image') {
    steps {
-    sh 'docker push mydockerhubuser/myapp:latest'
+    sh 'docker push sunil093/myapp:latest'
    }
   }
 
